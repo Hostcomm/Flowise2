@@ -8,6 +8,8 @@
         "email": "henryheng@flowiseai.com"
     },
     "dependencies": {
+        "@birksy89/flowise-embed": "^1.0.19",
+        "@birksy89/flowise-embed-react": "^1.0.3",
         "@codemirror/lang-javascript": "^6.2.1",
         "@codemirror/lang-json": "^6.0.1",
         "@codemirror/view": "^6.22.3",
@@ -23,8 +25,6 @@
         "@uiw/codemirror-theme-vscode": "^4.21.21",
         "@uiw/react-codemirror": "^4.21.21",
         "clsx": "^1.1.1",
-        "flowise-embed": "*",
-        "flowise-embed-react": "*",
         "flowise-react-json-view": "*",
         "formik": "^2.2.6",
         "framer-motion": "^4.1.13",
