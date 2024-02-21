@@ -111,7 +111,8 @@ const ChatbotFull = () => {
                             chatflowid={chatflow.id}
                             apiHost={baseURL}
                             chatflowConfig={chatbotOverrideConfig}
-                            theme={{ chatWindow: chatbotTheme }}
+                            // Nothing was passed in for the "button", which is used for the header color. This makes it the Hostcomm blue color.
+                            theme={{ chatWindow: chatbotTheme, button: { backgroundColor: '#0099CD' } }}
                         />
                     )}
                     <LoginDialog show={loginDialogOpen} dialogProps={loginDialogProps} onConfirm={onLoginClick} />
