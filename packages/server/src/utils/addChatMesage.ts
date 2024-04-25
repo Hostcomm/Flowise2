@@ -54,7 +54,7 @@ export const utilAddChatMessage = async (chatMessage: Partial<IChatMessage>): Pr
 
                 const openAIAssistantId = JSON.parse(assistant.details)?.id as string | undefined
 
-                const cxcortexURL = process.env.CXCORTEX_CONSOLE_URL
+                const cxcortexURL = `${process.env.CXCORTEX_CONSOLE_URL}/api/webhook/flowise`
 
                 if (!cxcortexURL) {
                     throw new InternalFlowiseError(
