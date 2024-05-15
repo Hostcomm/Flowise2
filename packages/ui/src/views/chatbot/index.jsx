@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { FullPageChat } from 'flowise-embed-react'
+import { FullPageChat } from '@birksy89/flowise-embed-react'
 import { useNavigate } from 'react-router-dom'
 
 // Project import
@@ -111,7 +111,8 @@ const ChatbotFull = () => {
                             chatflowid={chatflow.id}
                             apiHost={baseURL}
                             chatflowConfig={chatbotOverrideConfig}
-                            theme={{ chatWindow: chatbotTheme }}
+                            // Nothing was passed in for the "button", which is used for the header color. This makes it the Hostcomm blue color.
+                            theme={{ chatWindow: chatbotTheme, button: { backgroundColor: '#0099CD' } }}
                         />
                     )}
                     <LoginDialog show={loginDialogOpen} dialogProps={loginDialogProps} onConfirm={onLoginClick} />
